@@ -46,11 +46,21 @@
 	*/
 
 
+	//atualizar registro
+	/*
 	$usuario = new Usuario();
 	$usuario->loadById(7);
-
 	$usuario->update("professor", "996633");
+	echo $usuario;
+	*/
+
+
+	//deletar registro
+	$usuario = new Usuario();
+	$usuario->loadById(6);
+	$usuario->delete();
 
 	echo $usuario;
+
 
 ?>
