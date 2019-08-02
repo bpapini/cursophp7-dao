@@ -31,8 +31,26 @@
 
 
 	//carrega um usuário com base em seu login e senha
+	/*
 	$usuario = new Usuario();
 	$usuario->login("Bruno", "0987654321");
+	echo $usuario;
+	*/
+
+
+	//inserir novo registro
+	/*
+	$aluno = new Usuario("aluno", "111444777");
+	$aluno->insert();
+	echo $aluno;
+	*/
+
+
+	$usuario = new Usuario();
+	$usuario->loadById(7);
+
+	$usuario->update("professor", "996633");
+
 	echo $usuario;
 
 ?>
